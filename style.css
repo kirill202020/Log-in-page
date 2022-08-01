@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.sign-in .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.sign-in .left-side {
+  max-width: 500px;
+}
+.sign-in .right-side {
+  max-width: 630px;
+  width: 100%;
+  padding: 40px;
+}
+.sign-in .h1 {
+  font-size: 32px;
+}
+
+.forms-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.form label:not(.color) {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  width: 100%;
+  gap: 7px;
+}
+.form .check {
+  order: -1;
+}
+.form .input {
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  max-width: 550px;
+}
+
+a {
+  color: #111;
+}
+
+.btn {
+  border-radius: 32px;
+  border: 1px solid #333333;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 22px;
+}
+.btn__google {
+  background: none;
+  border: 1px solid #333333;
+  color: #333;
+  background: url(img/google-logo.svg) no-repeat center left 23.6363636364%;
+}
+.btn__create {
+  background: none;
+  color: #333;
+  border: 1px solid #333333;
+}
+.btn__create:disabled {
+  color: #fff;
+  background: #111;
+  opacity: 0.25;
+}
+
+.or-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.or-group .line {
+  background: rgba(102, 102, 102, 0.25);
+  height: 2px;
+  width: 100%;
+}
+.or-group p {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

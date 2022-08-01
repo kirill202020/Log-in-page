@@ -1,0 +1,169 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+// fonts
+$fonts-main: 'Poppins', sans-serif;
+
+// font-size
+$f-b: 32px;
+$f-m: 22px;
+$f-s: 16px;
+
+
+// border
+
+$input-border: 1px solid rgba(102, 102, 102, 0.35);
+$btn-border: 1px solid #333333;
+$b-rad: 12px;
+$btn-radius: 32px;
+
+
+// colors
+
+$color-title:#333;
+$color-links: #111;
+$color-label: #666;
+$color-white: #fff;
+
+
+
+$input-pad: 16px;
+
+*{
+    box-sizing: border-box;
+}
+
+
+html, body{
+    font-family: $fonts-main;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.sign-in{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    .left-side{
+        max-width: 500px;
+    }
+
+    .right-side{
+        max-width: 630px;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .h1{
+        font-size: $f-b;
+    }
+    
+}
+
+
+.forms-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+
+    label:not(.color){
+        font-size: $f-s;
+        display: flex;
+        flex-direction: column;
+        color: $color-label;
+        width: 100%;
+        gap: 7px;
+    }
+
+
+    .check{
+        order: -1;
+    }
+
+
+    .input{
+        border: $input-border;
+        border-radius: $b-rad;
+        padding: $input-pad;
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+
+
+a{
+    color: $color-links;
+}
+
+.btn{
+    border-radius: $btn-radius;
+    border: $btn-border;
+    padding: $input-pad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: $f-m;
+
+
+    &__google{
+        background: none;
+        border: $btn-border;
+        color: $color-title;
+        background: url(img/google-logo.svg) no-repeat center left 130px/550px*100%;
+    }
+
+    &__create{
+        background: none;
+        color: $color-title;
+        border: $btn-border;
+
+        &:disabled{
+            color: $color-white;
+            background: #111;
+            opacity: 0.25;
+        }
+    }
+}
+
+
+
+.or-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    
+    .line{
+        background: rgba(102, 102, 102, 0.25);
+        height: 2px;
+        width: 100%;
+    }
+
+
+    p{
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+    }
+}
